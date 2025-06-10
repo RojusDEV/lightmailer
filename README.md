@@ -33,7 +33,7 @@
 | Layer        | Tech                          |
 | ------------ | ----------------------------- |
 | Frontend     | Next.js, Tailwind CSS         |
-| Backend      | Node.js, Express (or Fastify) |
+| Backend      | Node.js, Express              |
 | Auth         | Auth0                         |
 | Queue        | Redis                         |
 | Database     | PostgreSQL (AWS RDS)          |

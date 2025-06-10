@@ -5,11 +5,38 @@
   --foreground: #171717;
 }
 
+@theme {
+  --animate-comet: comet 5s ease-in-out infinite;
+  @keyframes comet {
+    0% {
+      transform: translateX(0);
+      opacity: 0;
+    }
+    80% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(300px);
+      opacity: 0;
+    }
+  }
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-yellowish-500: #cf932c;
+  --color-btn-main: #d1963d;
+  --color-btn-main-border: #a17731;
+}
+
+[data-theme="dark"] {
+  --acme-canvas-color: oklch(0.21 0.034 264.665);
 }
 
 @media (prefers-color-scheme: dark) {
