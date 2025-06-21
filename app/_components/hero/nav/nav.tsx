@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Nav = () => {
   return (
@@ -29,7 +30,9 @@ const Nav = () => {
           </ul>
           <ul className="flex gap-[40px]">
             <li>
-              <button>Sign In</button>
+              <button>
+                <Link href={"/signin"}>Sign In</Link>
+              </button>
             </li>
             <li>
               <button className="text-yellowish-500">Request Demo</button>

@@ -7,6 +7,9 @@
 
 @theme {
   --animate-comet: comet 5s ease-in-out infinite;
+
+  --bg-socials: #26272b;
+
   @keyframes comet {
     0% {
       transform: translateX(0);

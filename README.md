@@ -30,15 +30,15 @@
 
 ## 📦 Tech Stack
 
-| Layer        | Tech                          |
-| ------------ | ----------------------------- |
-| Frontend     | Next.js, Tailwind CSS         |
-| Backend      | Node.js, Express              |
-| Auth         | Auth0                         |
-| Queue        | Redis                         |
-| Database     | PostgreSQL (AWS RDS)          |
-| Email Engine | Amazon SES (SMTP)             |
-| Hosting      | AWS EC2                       |
+| Layer        | Tech                  |
+| ------------ | --------------------- |
+| Frontend     | Next.js, Tailwind CSS |
+| Backend      | Node.js, Express      |
+| Auth         | Auth0                 |
+| Queue        | Redis                 |
+| Database     | PostgreSQL (AWS RDS)  |
+| Email Engine | Amazon SES (SMTP)     |
+| Hosting      | AWS EC2               |
 
 ---
 

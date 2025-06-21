@@ -13,8 +13,8 @@ function Main() {
           <span className="text-7xl tracking-wider"> The Email Engine</span>
           <span className="text-7xl">for Web3 Growth</span>
           <p className="text-xl mt-6 text-wrap">
-            Lightweight email marketing built for speed and simplicity. <br/>Create,
-            send, and grow—without the clutter
+            Lightweight email marketing built for speed and simplicity. <br />
+            Create, send, and grow—without the clutter
           </p>
           <div className="mt-14">
             <HeroButton>Sign up for demo</HeroButton>
@@ -24,7 +24,12 @@ function Main() {
             <div className=""></div>
           </div>
           <div className="flex justify-center mt-9 mb-16">
-            <Image alt="test" src="/images/hero-showcase.png" height={431} width={806} />
+            <Image
+              alt="test"
+              src="/images/hero-showcase.png"
+              height={431}
+              width={806}
+            />
           </div>
         </div>
       </div>
