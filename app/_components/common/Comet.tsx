@@ -23,7 +23,7 @@ const Comet = ({
         left: `${left}%`,
         background: gradient,
       }}
-      className="absolute w-[109px] h-1 rounded-md -z-1 animate-comet"
+      className="absolute w-[109px] h-1 rounded-md z-0 animate-comet"
     />
   );
 };

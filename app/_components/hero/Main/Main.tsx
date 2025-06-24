@@ -25,6 +25,7 @@ function Main() {
           </div>
           <div className="flex justify-center mt-9 mb-16">
             <Image
+            className="z-2"
               alt="test"
               src="/images/hero-showcase.png"
               height={431}

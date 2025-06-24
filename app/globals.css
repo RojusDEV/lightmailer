@@ -1,56 +1,78 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #ffffff;
+    --foreground: #171717;
+}
+
+@layer utilities {
 }
 
 @theme {
-  --animate-comet: comet 5s ease-in-out infinite;
+    --animate-comet: comet 5s ease-in-out infinite;
+    --foreground-low: #70707b;
+    --foreground-primary: #a0a0ab;
+    --bg-socials: #26272b;
 
-  --bg-socials: #26272b;
+    --outline-primary: #194185;
+    --outline-default: #3f3f46;
 
-  @keyframes comet {
-    0% {
-      transform: translateX(0);
-      opacity: 0;
+    --container-primary: #1570ef;
+    --bg-primary-hero: #17191f;
+
+    --selected-btn-primary-bg: #f7f9ff;
+    --selected-text-primary: #4263eb;
+
+    --modal-planInfo-bg: #f8f9fa;
+
+    --text-clr-blue-500: #4263eb;
+    --input-bg-gray: #F8F9FA;
+
+
+    @keyframes comet {
+        0% {
+            transform: translateX(0);
+            opacity: 0;
+        }
+        80% {
+            opacity: 1;
+        }
+        90% {
+            opacity: 0.5;
+        }
+        100% {
+            transform: translateX(300px);
+            opacity: 0;
+        }
     }
-    80% {
-      opacity: 1;
-    }
-    90% {
-      opacity: 0.5;
-    }
-    100% {
-      transform: translateX(300px);
-      opacity: 0;
-    }
-  }
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --color-yellowish-500: #cf932c;
-  --color-btn-main: #d1963d;
-  --color-btn-main-border: #a17731;
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
+    --color-yellowish-500: #cf932c;
+    --color-btn-main: #d1963d;
+    --color-btn-main-border: #a17731;
 }
 
 [data-theme="dark"] {
-  --acme-canvas-color: oklch(0.21 0.034 264.665);
+    --acme-canvas-color: oklch(0.21 0.034 264.665);
+}
+
+.light {
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    :root {
+        --background: #17191f;
+        --foreground: #ededed;
+    }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: Arial, Helvetica, sans-serif;
 }

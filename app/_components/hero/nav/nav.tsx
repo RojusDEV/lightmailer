@@ -10,8 +10,8 @@ const Nav = () => {
           <Image
             src="/images/logo.svg"
             alt="logo"
-            width={50}
-            height={50}
+            width={25}
+            height={25}
             className="w-10 h-10"
           />
           <span className="font-bold tracking-widest">LightMail</span>
